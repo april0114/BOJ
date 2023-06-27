@@ -1,0 +1,32 @@
+파이썬 스택 구현
+스택 : 가장 나중에 들어온 자료가 가장 먼저 처리되는 LIFO(Last in First out) 자료구조
+
+1. stack -init(빈 스택 (리스트) 초기화) 
+stack = [ ] 
+
+2. stack - push (원소를 넣을 때에 appen메서드를 이용해 가장 마지막에 원소를 넣도록 함)
+stack = [1,2,3]
+stack.append(4)
+
+stack = [1,2,3,4]
+
+3. stack -pop(스택에 원소를 제거할 때에는 pop메소르르 활용해 리스트의 가장 마지막 원소 제거)
+stack = [1,2,3]
+top = stack.pop)
+
+print(top)
+
+
+*Class 활용 스택 구현
+class stack:
+    def __init__(self):
+        self.items = []
+    def push(self, item);
+        self.items.append(item)
+    def pop(self):
+        return self.items.pop()
+    def peek(self):
+        return self.items[-1]
+    def isEmpty(self): #스택이 비어있는지 확인 true 리턴
+        return not self.items
+
